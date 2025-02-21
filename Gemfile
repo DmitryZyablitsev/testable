@@ -53,7 +53,7 @@ group :development, :test do
   gem 'debug', platforms: %i[mri windows]
   gem 'pg'
   gem 'rubocop'
-  gem 'rubocop-discourse'
+  # gem 'rubocop-discourse'
   gem 'rubocop-rails'
   gem 'ruby_audit'
 end
