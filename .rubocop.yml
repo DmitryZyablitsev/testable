@@ -1,9 +1,15 @@
 inherit_from: .rubocop_todo.yml
 
 AllCops:
+  SuggestExtensions: false
   NewCops: enable
   Exclude:
     - 'bin/brakeman'
+Rails:
+  Enabled: true
+Rails/I18nLocaleTexts:
+  Enabled: false
+
 Gemspec/AddRuntimeDependency: # new in 1.65
   Enabled: true
 Gemspec/DeprecatedAttributeAssignment: # new in 1.30
@@ -262,3 +268,6 @@ Style/SwapValues: # new in 1.1
   Enabled: true
 Style/YAMLFileRead: # new in 1.53
   Enabled: true
+
+plugins:
+  - rubocop-rails
