@@ -16,4 +16,9 @@ class PostTest < ActiveSupport::TestCase
     post = Post.new(title: 'Test')
     assert post.save, 'Post seved with title'
   end
+
+  test 'should have views as integer' do
+    post = Post.new(title: 'Test', views: 'test')
+    assert post.save, 'Post seved with title'
+  end
 end
